@@ -9,7 +9,7 @@ def terminalDisplay():
             print('', j, '|', end='')
         print('', field[c][2])
         c+=1
-        print ('___________')
+        print ('___|___|___')
     print ('', field[2][0], '|', field[2][1], '|', field[2][2])
 
 #Numbering from 1 to 9 on the grid
@@ -20,7 +20,6 @@ player = input('Player Name : ')
 print('Welcome to Utkarsh\'s impossible Tic Tac Toe ', player)
 terminalDisplay()
 first = input('Do you want to move first: YES or NO? ')
-print(str(first is "NO"))
 
 #Making lists of all posible moves and win possiblities 
 moveChoices = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -43,7 +42,7 @@ moveCounter = 0
 matchOver = False
 userMoves = []
 myMoves = []
-if (first is "NO"):
+if (first == "NO"):
     print ('My turn: ')
 
     if (len(moveChoices) > 0):
@@ -253,4 +252,4 @@ while (moveCounter < 9):
 if draw:
     print ('Draw')
 else:
-print('Something\'s not right')
+    print('Something\'s not right')
