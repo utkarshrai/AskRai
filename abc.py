@@ -253,4 +253,4 @@ while (moveCounter < 9):
 if draw:
     print ('Draw')
 else:
-    print('Something\'s not right')
+print('Something\'s not right')
